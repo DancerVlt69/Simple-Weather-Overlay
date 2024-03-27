@@ -93,7 +93,7 @@ $(document).ready(function(){
 			}
 		}
 		$.ajax({	// Get weather data from OpenWeather API. this is used only to get the place's name
-			url: "https://api.openweathermap.org/data/2.5/weather",
+			url: "https://api.openweathermap.org/data/3.0/weather",
 			data: params,
 			type: "GET",
 			dataType: "json"
@@ -146,7 +146,7 @@ $(document).ready(function(){
 	
 	function CurrentData() {	// Get and display the current weather data
 		$.ajax({	// Get weather data from OpenWeather API
-			url: "https://api.openweathermap.org/data/2.5/onecall",	// TODO: update to v3.0
+			url: "https://api.openweathermap.org/data/3.0/onecall",	// TODO: update to v3.0
 			data: {
 				"lat": placeCoordinates.lat,
 				"lon": placeCoordinates.lon,
